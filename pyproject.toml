@@ -1,0 +1,17 @@
+[project]
+name = "stable-diffusion-replication"
+version = "0.1.0"
+description = "Replication of famous diffusion model papers"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "torch",
+    "matplotlib",
+    "tqdm",
+    "einops"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
