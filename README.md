@@ -5,7 +5,9 @@ This project aims to replicate key papers in the field of Diffusion Models. It s
 ## Recommended Reading
 
 *   **[What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)** by Lilian Weng - An excellent comprehensive blog post explaining the mathematics and theory behind diffusion models.
-*   **[Peter Holderrieth's Blog](https://www.peterholderrieth.com/blog)** - Great resource covering Langevin dynamics, stochastic differential equations, and diffusion models.
+*   **[Peter Holderrieth's Blog](https://www.peterholderrieth.com/blog)** - Great resource covering Langevin dynamics, stochastic differential equations, and diffusion models. 
+
+These resources are time consuming to read but are very helpful for understanding the math behind the models.
 
 ## Famous Papers
 
