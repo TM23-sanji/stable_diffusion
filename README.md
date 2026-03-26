@@ -2,6 +2,12 @@
 
 This project aims to replicate key papers in the field of Diffusion Models. It serves as a study guide and code repository for understanding the implementations of these generative models.
 
+## How Diffusion Branches & Expands
+
+![Diffusion Model Overview](media/diffusion_unified.svg)
+
+Diffusion models work by learning to reverse a gradual noising process. Starting from pure noise, they iteratively denoise to generate samples. The diagram above shows how diffusion branches out from a single point (noise) and expands through the reverse process to create complex data distributions.
+
 ## Recommended Reading
 
 *   **[What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)** by Lilian Weng - An excellent comprehensive blog post explaining the mathematics and theory behind diffusion models.
