@@ -136,4 +136,8 @@ dmypy.json
 cython_debug/
 
 # uv
-uv.lock
+# uv.lock
+
+private_key.pem
+Assignment
+help.md
