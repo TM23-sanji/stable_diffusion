@@ -5,13 +5,22 @@ description = "Replication of famous diffusion model papers"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-    "numpy",
     "torch",
-    "matplotlib",
+    "torchvision",
+    "diffusers",
+    "transformers",
+    "accelerate",
+    "peft",
+    "datasets",
+    "Pillow",
+    "wandb",
+    "huggingface_hub",
+    "safetensors",
     "tqdm",
-    "einops",
-    "openai>=2.35.1",
+    "bitsandbytes",
+    "xformers",
 ]
+
 
 [build-system]
 requires = ["hatchling"]
