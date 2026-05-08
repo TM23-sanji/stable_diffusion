@@ -12,9 +12,9 @@ Diffusion models work by learning to reverse a gradual noising process. Starting
 
 We fine-tuned **SDXL** (`stabilityai/stable-diffusion-xl-base-1.0`) on a custom anime dataset using LoRA to adapt the model's generation toward a specific anime art style. Below are example outputs from the fine-tuned model:
 
-![Generated Image 1](finetune_lora_result_media/001.png)
-![Generated Image 2](finetune_lora_result_media/010.png)
-![Generated Image 3](finetune_lora_result_media/050.png)
+![Generated Image 1](finetune_lora_result_media/047.png)
+![Generated Image 2](finetune_lora_result_media/014.png)
+![Generated Image 3](finetune_lora_result_media/056.png)
 
 ### Pipeline
 
