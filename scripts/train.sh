@@ -10,23 +10,22 @@ echo "  SDXL LoRA — anime fine-tune"
 echo "  GPU: $(nvidia-smi --query-gpu=name --format=csv,noheader | head -1)"
 echo "═══════════════════════════════════════════"
 
-# ── 1. Install deps ─────────────────────────
+# ── 1. Install deps with UV (Manual Path Fix) ──
 echo "[1/4] Installing dependencies..."
-pip install -q --upgrade pip
-pip install -q \
+
+# Install uv but ignore the shell setup errors
+curl -LsSf https://astral.sh/uv/install.sh | sh || true
+
+# Explicitly add the bin path where uv was just placed
+export PATH="$HOME/.local/bin:$PATH"
+
+# Now use uv via the direct path to be 100% safe
+uv pip install --system \
     torch torchvision --index-url https://download.pytorch.org/whl/cu121
-pip install -q \
-    "diffusers" \
-    "transformers" \
-    "accelerate" \
-    "peft" \
-    "safetensors" \
-    "huggingface_hub" \
-    "wandb" \
-    "Pillow" \
-    "tqdm" \
-    "xformers" \
-    "bitsandbytes"
+
+uv pip install --system \
+    diffusers transformers accelerate peft safetensors \
+    huggingface_hub wandb Pillow tqdm xformers bitsandbytes
 
 # ── 2. Configure accelerate for single GPU ──
 echo "[2/4] Configuring accelerate..."
